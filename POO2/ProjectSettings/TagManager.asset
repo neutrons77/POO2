@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Inimigo
+  - chao
+  - Ataque
+  - ataque
   layers:
   - Default
   - TransparentFX
