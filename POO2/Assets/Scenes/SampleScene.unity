@@ -614,8 +614,8 @@ GameObject:
   - component: {fileID: 759712001}
   - component: {fileID: 759712000}
   - component: {fileID: 759711999}
-  - component: {fileID: 759712003}
   - component: {fileID: 759712004}
+  - component: {fileID: 759712003}
   m_Layer: 0
   m_Name: heroi
   m_TagString: Player
@@ -727,6 +727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9afba396baa213e4eb8332fc88395ae7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  andando: 0
 --- !u!114 &759712000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -798,28 +799,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!95 &759712004
-Animator:
-  serializedVersion: 7
+--- !u!114 &759712004
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 759711994}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 448f41b132d6eaf4e8add48fb89939b9, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c5b53a3791e07d48bc73633babfc2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  velocidadeDaAnimacao: 1
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1364,7 +1357,7 @@ Animator:
   m_GameObject: {fileID: 1693503649}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 86fb244105d237f48a8e03f6d8633cb4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 448f41b132d6eaf4e8add48fb89939b9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
