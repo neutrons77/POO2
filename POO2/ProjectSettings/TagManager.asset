@@ -8,6 +8,7 @@ TagManager:
   - chao
   - Ataque
   - ataque
+  - AtaqueHeroi
   layers:
   - Default
   - TransparentFX
