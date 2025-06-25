@@ -1061,7 +1061,7 @@ MonoBehaviour:
   energia: 183
   forca_ataque: 48
   forca_do_pulo: 1.29
-  velocidade: 0.84
+  velocidade: 8
   numero_de_pes: 2
   numero_de_maos: 2
 --- !u!114 &759712001
@@ -1200,6 +1200,8 @@ GameObject:
   - component: {fileID: 901034686}
   - component: {fileID: 901034685}
   - component: {fileID: 901034689}
+  - component: {fileID: 901034690}
+  - component: {fileID: 901034691}
   m_Layer: 0
   m_Name: "vil\xE3o"
   m_TagString: Inimigo
@@ -1311,7 +1313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ataqueObject: {fileID: 1031104757}
-  raioDeVisao: 5
+  raioDeVisao: 3
   distanciaMinima: 1.5
 --- !u!54 &901034686
 Rigidbody:
@@ -1362,6 +1364,39 @@ MonoBehaviour:
   armadura: 0
   arma: 0
 --- !u!114 &901034689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901034680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77782906c50452b40a28d246567f0ca9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &901034690
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901034680}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &901034691
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1434,7 +1469,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031104757}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2279,7 +2314,7 @@ Animator:
   m_GameObject: {fileID: 1466566838}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9e62bd77e3a732d4d96942934f4e1cd6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

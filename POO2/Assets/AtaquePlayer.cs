@@ -2,13 +2,16 @@ using UnityEngine;
 
 public class AtaquePlayer : MonoBehaviour
 {
-    public Personagem personagem;
-    private int ataque;
-    
+    public Personagem personagem;  
 
     public int AtaqueDoPersonagem()
     {
-        ataque = personagem.Forca_Ataque(); 
-        return ataque;
+        if (personagem == null)
+        {
+            Debug.LogError("ujgvfruhyv");
+            return 0; 
+        }
+
+        return personagem.Forca_Ataque();
     }
 }
